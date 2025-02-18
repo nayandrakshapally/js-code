@@ -17,3 +17,15 @@ function findSecondLargest(arr) {
 
 const arrays = [100, 20, 112, 22];
 console.log(findSecondLargest(arrays));
+
+// Other approach
+function secondLargest(arr) {
+  // Remove duplicates
+  let uniqueArr = [...new Set(arr)];
+
+  // Sort in descending order
+  uniqueArr.sort((a, b) => b - a);
+
+  // Return the second largest element
+  return uniqueArr.length > 1 ? uniqueArr[1] : null; // Handle cases where there is no second largest
+}
