@@ -11,6 +11,8 @@ function evenOnly(array) {
 }
 console.log(evenOnly(array));
 
+// let odd = test.filter((res)=>res%2);
+
 // item % 2 divides item by 2 and returns the remainder.
 // If item % 2 == 0, it means item is evenly divisible by 2, making it an even number.
 // If item % 2 != 0, it means item is not evenly divisible by 2, making it an odd number.
